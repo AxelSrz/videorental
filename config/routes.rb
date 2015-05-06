@@ -7,5 +7,6 @@ Rails.application.routes.draw do
     resources :videoforrents
     resources :rentalagreements
     
-    get '/example', to: 'reports#example', as: :example
+    get '/listademiembros', to: 'reports#listamiembros', as: :listamiembros
+    get '/titulos', to: 'reports#nombrevideos', as: :nombrevideos
 end
